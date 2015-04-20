@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "8b3be7eb30da4335453ce07d0330ec4f",
+    "hash": "7e60b0b08bc5494d786696e550e224b0",
     "packages": [
         {
             "name": "composer/composer",
@@ -206,6 +206,42 @@
                 "magento"
             ],
             "time": "2015-03-05 21:40:30"
+        },
+        {
+            "name": "magento/sample-data-fixtures",
+            "version": "0.74.0-beta4",
+            "dist": {
+                "type": "zip",
+                "url": "https://packages.magento.com/_packages/magento_sample-data-fixtures-0.74.0-beta4.zip",
+                "reference": null,
+                "shasum": "0bcc931ce363dc76755a2f5464d039a64a553c0a"
+            },
+            "require": {
+                "magento/framework": "~0.74.0-beta4",
+                "magento/magento-composer-installer": "*"
+            },
+            "type": "magento2-component",
+            "extra": {
+                "map": [
+                    [
+                        "*",
+                        "dev/tools/Magento/Tools/SampleData"
+                    ]
+                ]
+            },
+            "description": "Sample Data fixtures"
+        },
+        {
+            "name": "magento/sample-data-media",
+            "version": "0.42.0-beta2",
+            "dist": {
+                "type": "zip",
+                "url": "https://packages.magento.com/_packages/magento_sample-data-media-0.42.0-beta2.zip",
+                "reference": null,
+                "shasum": "eda705d082644e970fdb63f58bbd68dfe623619b"
+            },
+            "type": "library",
+            "description": "Sample Data media files"
         },
         {
             "name": "magento/zendframework1",
@@ -3418,12 +3454,14 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "composer/composer": 15,
+        "magento/sample-data-fixtures": 10,
+        "magento/sample-data-media": 10,
         "phpmd/phpmd": 0
     },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": "~5.5.0|~5.6.0"
+        "php": "~5.5.0"
     },
     "platform-dev": {
         "lib-libxml": "*",
