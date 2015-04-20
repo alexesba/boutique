@@ -36,7 +36,7 @@
         "tubalmartin/cssmin": "2.4.8-p4",
         "magento/magento-composer-installer": "*",
         "symfony/console": "~2.3",
-        "magento/sample-data-fixtures": "0.74.0-beta4",
+        "magento/sample-data-fixtures": "~0.74.0-beta5",
         "magento/sample-data-media": "~0.42.0-beta2"
     },
     "require-dev": {
@@ -211,5 +211,11 @@
             "Magento\\TestFramework\\Utility\\": "dev/tests/static/framework/Magento/TestFramework/Utility/",
             "Magento\\ToolkitFramework\\": "dev/tools/performance-toolkit/framework/Magento/ToolkitFramework/"
         }
+    },
+    "repositories": {
+      "magento": {
+        "type": "composer",
+        "url": "http://packages.magento.com"
+      }
     }
 }
